@@ -12,3 +12,8 @@ def CreateBlog(request):
         print(title, category, description, content, image)
     return render(request, 'blogmanager/createBlog.html')
 
+def BrowseBlogs(request):
+    return render(request, 'blogmanager/browse.html')
+
+def ReadBlog(request):
+    return render(request, 'blogmanager/viewBlog.html')
